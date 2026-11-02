@@ -1,0 +1,50 @@
+{
+  "best_model": "Extra Trees",
+  "scores": {
+    "Random Forest": {
+      "MAE_runs": 22.025,
+      "RMSE_runs": 29.61,
+      "R2": 0.2931
+    },
+    "Extra Trees": {
+      "MAE_runs": 21.779,
+      "RMSE_runs": 29.211,
+      "R2": 0.3121
+    },
+    "Hist Gradient Boosting": {
+      "MAE_runs": 22.223,
+      "RMSE_runs": 29.418,
+      "R2": 0.3023
+    },
+    "Hist Gradient Boosting - Deeper": {
+      "MAE_runs": 22.181,
+      "RMSE_runs": 29.345,
+      "R2": 0.3058
+    },
+    "Hist Gradient Boosting - Faster": {
+      "MAE_runs": 22.312,
+      "RMSE_runs": 29.528,
+      "R2": 0.2971
+    }
+  },
+  "features": [
+    "batting_team",
+    "bowling_team",
+    "venue",
+    "runs",
+    "wickets",
+    "overs",
+    "runs_last_5",
+    "wickets_last_5",
+    "current_run_rate",
+    "last_five_run_rate"
+  ],
+  "target": "total",
+  "rows_used": 282441,
+  "matches_used": 1243,
+  "dataset": "data\\processed\\cricsheet_ipl.csv",
+  "validation": "Chronological split by match date; latest 20% held out",
+  "training_end_date": "2023-05-02",
+  "test_start_date": "2023-05-03",
+  "note": "Features include venue, current run rate, and last-five-over run rate. Test matches are later than training matches."
+}

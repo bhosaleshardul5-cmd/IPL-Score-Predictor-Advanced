@@ -1,0 +1,30 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large trained model
+models/model_bundle.joblib
+
+# Raw and processed datasets
+data/
+ipl.csv
